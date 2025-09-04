@@ -1,12 +1,85 @@
 site_name: ERP Sankhya - Manual Técnico
+
+site_url: https://example.com
+
 theme:
   name: material
+  language: pt-BR
+  icon:
+    previous: fontawesome/solid/angle-left
+    next: fontawesome/solid/angle-right
+  palette:
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
 
-repo_url: https://github.com/DadyIlha/sankhya-doc/
-repo_name: GitHub
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: green
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Modo escuro
+
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: green
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Modo claro
+  features:
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.tooltips
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.progress
+    - navigation.expand
+    - navigation.indexes
+    # ADICIONA ABAS DE NAVEGAÇÃO
+    # - navigation.tabs
+    # - navigation.tabs.sticky
+
+plugins:
+  - search
+  - offline
+
+markdown_extensions:
+  - abbr
+  - attr_list
+  - pymdownx.snippets:
+      auto_append:
+        - includes/abbreviations.md
+
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/instagram 
+      name: Instagram
+      link: https://www.instagram.com/inoveideiasesolucoes/
+    - icon: fontawesome/brands/linkedin
+      name: LinkedIn
+      link: https://www.linkedin.com/company/inove-ideias-e-solu%C3%A7%C3%B5es/
+  consent:
+    title: Cookie consent
+    description: >-
+      Nós usamos cookies para reconhecer suas visitas repetidas e preferências, bem como para medir a eficácia de nossa documentação e se os usuários encontram o que estão procurando. Com seu consentimento, você está nos ajudando a melhorar nossa documentação.
+    cookies:
+      analytics: Google Analytics
+    actions:
+      - manage
+      - accept
+      - reject
+
+watch:
+  - includes
 
 nav:
   - Introdução: "index.md"
-  - "Instalação e Configuração":
-      - "Passo 1: Instalação": "guia/passo1.md"
-      - "Passo 2: Configuração": "guia/passo2.md"
+  - Instalação e Configuração:
+      - "passo1/index.md"
+      - "Instalação": "passo1/instalacao.md"
+      - "Configuração": "passo1/configuracao.md"
