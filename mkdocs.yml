@@ -1,0 +1,10 @@
+site_name: ERP Sankhya - Manual Técnico
+theme:
+  name: material
+
+# A seção 'nav' define a estrutura de navegação
+nav:
+  - Introdução: "index.md"
+  - "Instalação e Configuração":
+      - "Passo 1: Instalação": "guia/passo1.md"
+      - "Passo 2: Configuração": "guia/passo2.md"
