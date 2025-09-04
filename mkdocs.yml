@@ -2,7 +2,9 @@ site_name: ERP Sankhya - Manual Técnico
 theme:
   name: material
 
-# A seção 'nav' define a estrutura de navegação
+repo_url: https://github.com/DadyIlha/sankhya-doc/
+repo_name: GitHub
+
 nav:
   - Introdução: "index.md"
   - "Instalação e Configuração":
