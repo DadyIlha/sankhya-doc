@@ -54,25 +54,25 @@ markdown_extensions:
       auto_append:
         - includes/abbreviations.md
 
-extra:
-  generator: false
-  social:
-    - icon: fontawesome/brands/instagram
-      name: Instagram
-      link: https://www.instagram.com/inoveideiasesolucoes/
-    - icon: fontawesome/brands/linkedin
-      name: LinkedIn
-      link: https://www.linkedin.com/company/inove-ideias-e-solu%C3%A7%C3%B5es/
-  consent:
-    title: Cookie consent
-    description: >-
-      Nós usamos cookies para reconhecer suas visitas repetidas e preferências, bem como para medir a eficácia de nossa documentação e se os usuários encontram o que estão procurando. Com seu consentimento, você está nos ajudando a melhorar nossa documentação.
-    cookies:
-      analytics: Google Analytics
-    actions:
-      - manage
-      - accept
-      - reject
+# extra:
+#   generator: false
+#   social:
+#     - icon: fontawesome/brands/instagram
+#       name: Instagram
+#       link: https://www.instagram.com/inoveideiasesolucoes/
+#     - icon: fontawesome/brands/linkedin
+#       name: LinkedIn
+#       link: https://www.linkedin.com/company/inove-ideias-e-solu%C3%A7%C3%B5es/
+#   consent:
+#     title: Cookie consent
+#     description: >-
+#       Nós usamos cookies para reconhecer suas visitas repetidas e preferências, bem como para medir a eficácia de nossa documentação e se os usuários encontram o que estão procurando. Com seu consentimento, você está nos ajudando a melhorar nossa documentação.
+#     cookies:
+#       analytics: Google Analytics
+#     actions:
+#       - manage
+#       - accept
+#       - reject
 
 watch:
   - includes
