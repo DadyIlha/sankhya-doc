@@ -1,11 +1,11 @@
 site_name: ERP Sankhya - Manual Técnico
 
-site_url: https://example.com
-
 theme:
   name: material
   language: pt-BR
+  logo: assets/image.png
   icon:
+    logo: assets/image.png
     previous: fontawesome/solid/angle-left
     next: fontawesome/solid/angle-right
   palette:
@@ -39,13 +39,13 @@ theme:
     - navigation.instant.progress
     - navigation.expand
     - navigation.indexes
+    - navigation.footer
     # ADICIONA ABAS DE NAVEGAÇÃO
     # - navigation.tabs
     # - navigation.tabs.sticky
 
 plugins:
   - search
-  - offline
 
 markdown_extensions:
   - abbr
@@ -57,7 +57,7 @@ markdown_extensions:
 extra:
   generator: false
   social:
-    - icon: fontawesome/brands/instagram 
+    - icon: fontawesome/brands/instagram
       name: Instagram
       link: https://www.instagram.com/inoveideiasesolucoes/
     - icon: fontawesome/brands/linkedin
@@ -79,7 +79,4 @@ watch:
 
 nav:
   - Introdução: "index.md"
-  - Instalação e Configuração:
-      - "passo1/index.md"
-      - "Instalação": "passo1/instalacao.md"
-      - "Configuração": "passo1/configuracao.md"
+  - Instalação: "instalacao/index.md"
